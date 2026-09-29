@@ -2,7 +2,7 @@
 
 ## Overview
 
-Over the past two weeks, I continued building my SOC Analyst foundation through hands-on security labs and learning modules on TryHackMe.
+Guys i'm telling you, Over the past two weeks, I continued building my SOC Analyst foundation through hands-on security labs and learning modules on TryHackMe.
 
 This phase focused on understanding how modern Security Operations Centers collect, investigate, and respond to security events using **SIEM, EDR, log-analysis platforms, and SOAR**.
 
