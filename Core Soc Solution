@@ -1,0 +1,25 @@
+# 03: Core SOC Solutions
+
+## Overview
+| Tool | Full name | Main job | Typical data |
+|------|-----------|----------|--------------|
+| **SIEM** | Security Information & Event Management | Collect, normalise, correlate and alert on logs from many sources | Firewall, auth, DNS, proxy, endpoint logs |
+| **EDR** | Endpoint Detection & Response | Deep visibility and response on individual endpoints | Processes, file/registry changes, network connections |
+| **SOAR** | Security Orchestration, Automation & Response | Automate repetitive triage and response via playbooks | Alerts and API integrations |
+
+## How they fit together
+1. Logs and endpoint telemetry flow into the **SIEM**.
+2. Correlation rules turn that data into alerts.
+3. **SOAR** enriches the alert automatically (reputation lookups, user info) and may run containment steps.
+4. The analyst reviews the enriched alert and uses **EDR** to isolate a host or inspect processes.
+
+## Other controls worth knowing
+- **Firewall:** allows or blocks traffic by rule
+- **IDS / IPS:** detects (and optionally blocks) suspicious network activity
+- **Email security gateway:** filters spam, phishing and malicious attachments
+- **Threat intelligence:** feeds of known-bad IOCs to enrich alerts
+
+## Takeaways
+- A SIEM is only as good as the log sources feeding it.
+- EDR answers "what happened on this machine?", the SIEM answers "what happened across the environment?".
+- Automation reduces alert fatigue but playbooks need human oversight.
